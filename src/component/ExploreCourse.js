@@ -61,6 +61,36 @@ export default function ExploreCourse() {
                     <Col style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                         <Fade>
                             <Card sx={{ width: 345 }} className='explorecardmobile'>
+                                <NavLink to="/sscandbanking" style={{ color: '#bc455b', textDecoration: 'none' }} ><CardActionArea>
+                                    <Bounce><CardMedia
+                                        component="img"
+                                        height="140"
+                                        image="/v2/ebank1.png"
+                                        alt="green iguana"
+                                        className='explorecardimage ec3'
+                                    /></Bounce>
+                                    <CardContent>
+                                        <Typography gutterBottom variant="h5" component="div">
+                                            Banking / SSC
+                                        </Typography>
+                                        <Typography variant="body2" color="text.secondary" style={{ fontWeight: '300' }} className='explorecardcontent'>
+                                            Welcome to the Banking section of IMPULSE, your key to unlocking a successful career in the banking industry. We specialize in providing comprehensive coaching and guidance for banking exams conducted by leading institutions. Our experienced faculty members, equipped with extensive knowledge and expertise, are dedicated to preparing you for the challenges of banking exams.
+                                        </Typography>
+                                    </CardContent>
+                                </CardActionArea></NavLink>
+                                <CardActions style={{ padding: '2vh' }}>
+                                    <Button style={{ color: 'white', background: '#bc455b' }}>
+                                        <a href={ssc_brochure} style={{ color: 'white', textDecoration: 'none' }}><DownloadIcon /> Brochure</a>
+                                    </Button><Button size="small" style={{ color: '#bc455b' }}>
+                                        <NavLink to="/sscandbanking" style={{ color: '#bc455b', textDecoration: 'none' }} >Learn More</NavLink>
+                                    </Button>
+                                </CardActions>
+                            </Card>
+                        </Fade>
+                    </Col>
+                    <Col style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                        <Fade>
+                            <Card sx={{ width: 345 }} className='explorecardmobile'>
                                 <NavLink to="/upsc" style={{ color: '#3c8cb6', textDecoration: 'none' }} ><CardActionArea>
                                     <Bounce><CardMedia
                                         component="img"
@@ -83,36 +113,6 @@ export default function ExploreCourse() {
                                         <a href={upsc_brochure} style={{ color: 'white', textDecoration: 'none' }}><DownloadIcon /> Brochure</a>
                                     </Button><Button size="small" style={{ color: '#3c8cb6' }}>
                                         <NavLink to="/upsc" style={{ color: '#3c8cb6', textDecoration: 'none' }} >Learn More</NavLink>
-                                    </Button>
-                                </CardActions>
-                            </Card>
-                        </Fade>
-                    </Col>
-                    <Col style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                        <Fade>
-                            <Card sx={{ width: 345 }} className='explorecardmobile'>
-                                <NavLink to="/sscandbanking" style={{ color: '#bc455b', textDecoration: 'none' }} ><CardActionArea>
-                                    <Bounce><CardMedia
-                                        component="img"
-                                        height="140"
-                                        image="/v2/ebank1.png"
-                                        alt="green iguana"
-                                        className='explorecardimage ec3'
-                                    /></Bounce>
-                                    <CardContent>
-                                        <Typography gutterBottom variant="h5" component="div">
-                                            SSC and Banking
-                                        </Typography>
-                                        <Typography variant="body2" color="text.secondary" style={{ fontWeight: '300' }} className='explorecardcontent'>
-                                            Welcome to the Banking section of IMPULSE, your key to unlocking a successful career in the banking industry. We specialize in providing comprehensive coaching and guidance for banking exams conducted by leading institutions. Our experienced faculty members, equipped with extensive knowledge and expertise, are dedicated to preparing you for the challenges of banking exams.
-                                        </Typography>
-                                    </CardContent>
-                                </CardActionArea></NavLink>
-                                <CardActions style={{ padding: '2vh' }}>
-                                    <Button style={{ color: 'white', background: '#bc455b' }}>
-                                        <a href={ssc_brochure} style={{ color: 'white', textDecoration: 'none' }}><DownloadIcon /> Brochure</a>
-                                    </Button><Button size="small" style={{ color: '#bc455b' }}>
-                                        <NavLink to="/sscandbanking" style={{ color: '#bc455b', textDecoration: 'none' }} >Learn More</NavLink>
                                     </Button>
                                 </CardActions>
                             </Card>

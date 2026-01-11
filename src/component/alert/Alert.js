@@ -48,7 +48,7 @@ function Alert() {
                        Join TNPSC Channel
                     </Button></a> */}
                     {/* <a href="https://t.me/impulsebankingssc" target='_blank'><Button variant="info">
-                        SSC And BANKING
+                        Banking / SSC
                     </Button></a> */}
                     <a href="tel:9003557734" target='_blank'><Button variant="danger">
                         <FiPhoneCall /> Call

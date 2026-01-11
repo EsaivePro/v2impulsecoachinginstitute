@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'Tam Marutham';
+    /* Use local system font if installed. To enable a bundled font, place "TamMarutham.ttf" in public/v2/fonts/ and uncomment the url() below.
+       Note: referencing files from public via url('/...') may be processed by webpack depending on your setup. */
+    src: local('Tam Marutham');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.tam-marutham {
+    font-family: 'Tam Marutham', 'Latha', 'Noto Sans Tamil', sans-serif;
+}
+
+/* TNPSC responsive card layout */
+.tnpsc-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    align-items: stretch;
+}
+
+.tnpsc-card {
+    background: rgba(0, 0, 0, 0.45);
+    border-left: 6px solid #aa2c44;
+    padding: 20px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+    border-radius: 6px;
+    color: #fff;
+    transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.tnpsc-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+}
+
+.tnpsc-card .card-title {
+    margin: 0 0 8px 0;
+    font-size: 1.15rem;
+    color: #ffd6dc;
+    font-weight: 700;
+}
+
+.tnpsc-card .card-body p {
+    margin: 0;
+    line-height: 1.8;
+    color: #e6e6e6;
+}
+
+@media (max-width: 900px) {
+    .tnpsc-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .tnpsc-card {
+        padding: 16px;
+    }
+
+    /* Brochure spacing override for TNPSC pages */
+    .brochure_content {
+        padding: 2.5rem 4rem;
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    .brochure_content p,
+    .brochure_content .tnpsc-card .card-body p {
+        font-size: 1rem;
+    }
+}

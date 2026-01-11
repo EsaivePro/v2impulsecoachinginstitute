@@ -13,29 +13,29 @@ const Sscbanking = () => {
     window.scrollTo(0, 0);
 
     const [key, setKey] = useState('brochure');
-    const [tab,setTab] = useState([true]);
-    const [subtab,setSubTab] = useState([true]);
-    
-    const tabHandler=(tab)=>{
-         let temparray = Array();
-         let temparray2 = Array();
-         temparray[tab] = true;
-         setTab(temparray);
-         setSubTab(temparray2);
-         console.log(tab);
+    const [tab, setTab] = useState([true]);
+    const [subtab, setSubTab] = useState([true]);
+
+    const tabHandler = (tab) => {
+        let temparray = Array();
+        let temparray2 = Array();
+        temparray[tab] = true;
+        setTab(temparray);
+        setSubTab(temparray2);
+        console.log(tab);
     }
 
-    const tabHandler_sub=(subtab)=>{
+    const tabHandler_sub = (subtab) => {
         tabHandler(1);
         let temparray = Array();
         temparray[subtab] = true;
         setSubTab(temparray);
-   }
+    }
 
     let bankingimportant_content = Array();
     let bankingimportant_heading = Array();
-    bankingimportant_heading = ['ATM (Automatic Teller Machines)','Bancassurance','Bouncing of a cheque','Bank Account','Bank Rate','Basis Point','Call Money','Cheque','Core Banking','Core Banking Solutions (CBS)','CRR (Cash Reverse Ratio)','Current Account','Debit Card','Demat Account','Dishonor of Cheque','E-Banking','EFT – (Electronic Fund Transfer)','Fiscal Deficit','Inflation','Initial Public Offering (IPO)','Kiosk Banking','Leverage Ratio','Liquidity','Market Capitalization','Mortgage','Mutual Fund','Monetary Policy'
-    ,'Non-bank ATM / White-labeled ATM', 'Non-performing Assets (NPAs)','Permanent Account Number (PAN)','Plastic Money','Point of Sale (PoS)','Prime Lending Rate (PLR)','Pass Book','Repo Rate','Reverse Repo Rate','Special Drawing Rights (SDR)','SLR (Statutory Liquidity Ratio)','Teller','Universal Banking','Universal Banking','Wholesale Banking'];
+    bankingimportant_heading = ['ATM (Automatic Teller Machines)', 'Bancassurance', 'Bouncing of a cheque', 'Bank Account', 'Bank Rate', 'Basis Point', 'Call Money', 'Cheque', 'Core Banking', 'Core Banking Solutions (CBS)', 'CRR (Cash Reverse Ratio)', 'Current Account', 'Debit Card', 'Demat Account', 'Dishonor of Cheque', 'E-Banking', 'EFT – (Electronic Fund Transfer)', 'Fiscal Deficit', 'Inflation', 'Initial Public Offering (IPO)', 'Kiosk Banking', 'Leverage Ratio', 'Liquidity', 'Market Capitalization', 'Mortgage', 'Mutual Fund', 'Monetary Policy'
+        , 'Non-bank ATM / White-labeled ATM', 'Non-performing Assets (NPAs)', 'Permanent Account Number (PAN)', 'Plastic Money', 'Point of Sale (PoS)', 'Prime Lending Rate (PLR)', 'Pass Book', 'Repo Rate', 'Reverse Repo Rate', 'Special Drawing Rights (SDR)', 'SLR (Statutory Liquidity Ratio)', 'Teller', 'Universal Banking', 'Universal Banking', 'Wholesale Banking'];
     let importLength = bankingimportant_heading.length;
     bankingimportant_content = [
         'They are machines that dispense cash, receive cash, accept cheques, and give balance details and mini statements to the customers through Computer network',
@@ -82,78 +82,68 @@ const Sscbanking = () => {
         'It is similar to retail banking with a slight difference that it mainly focuses on the financial needs of the institutional clients and the industry.'
     ];
     return (
-        <section style={{overflowX:'hidden'}}>
-            <Navigation/>
+        <section style={{ overflowX: 'hidden' }}>
+            <Navigation />
             <div class="page-header">
-            
-            <div class='page-head-title'>
+
+                <div class='page-head-title'>
                     <a href="#" class="developer6669">
                         <div class="img-container">
                             <img src="pic/ssc.jpg" alt="" />
                         </div>
-                    </a>  
-                    <h5 className='course_heading'>SSC AND BANKING</h5>
-            </div>  
-            <div class="social-icons">
-                <a href="https://www.instagram.com/impulsebanking/" target="_blank" class="insta"
-                ><i class="fab fa-instagram"></i
-                ></a>
-                <a href="https://t.me/impulsebankingssc" target="_blank" class="telegram"
-                ><i class="fab fa-telegram-plane"></i
-                ></a>
-                <a href="https://youtube.com/@impulsecoachinginstitute9254" target="_blank" class="email"
-                ><i class="fab fa-youtube" style={{color:'red'}}></i
-                ></a>
+                    </a>
+                    <h5 className='course_heading'>Banking / SSC</h5>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/impulsebanking/" target="_blank" class="insta"
+                    ><i class="fab fa-instagram"></i
+                    ></a>
+                    <a href="https://t.me/impulsebankingssc" target="_blank" class="telegram"
+                    ><i class="fab fa-telegram-plane"></i
+                    ></a>
+                    <a href="https://youtube.com/@impulsecoachinginstitute9254" target="_blank" class="email"
+                    ><i class="fab fa-youtube" style={{ color: 'red' }}></i
+                    ></a>
+                </div>
             </div>
-            </div>  
             <div >
 
-            <Navbar className='tabs-cont'>
-            {/* <Container> */}
-                <Nav>
-                    <button className='tab-btn btn btn-secondary' onClick={() => tabHandler(0)}>Career</button>
-                    <button className='tab-btn btn btn-secondary' onClick={() => tabHandler_sub(0)}>PO Syllabus</button>
-                    <button className='tab-btn btn btn-secondary' onClick={() => tabHandler_sub(1)}>CLERK Syllabus</button>
-                    <button className='tab-btn btn btn-secondary' onClick={() => tabHandler(2)}>Important Banking Terms</button>
-                    <button className='tab-btn btn btn-secondary' onClick={() => tabHandler(3)}>Fees Structure</button>
-                </Nav>
-            {/* </Container> */}
-            </Navbar>
-            
+                <Navbar className='tabs-cont'>
+                    {/* <Container> */}
+                    <Nav>
+                        <button className='tab-btn btn btn-secondary' onClick={() => tabHandler(0)}>Career</button>
+                        <button className='tab-btn btn btn-secondary' onClick={() => tabHandler_sub(0)}>PO Syllabus</button>
+                        <button className='tab-btn btn btn-secondary' onClick={() => tabHandler_sub(1)}>CLERK Syllabus</button>
+                        <button className='tab-btn btn btn-secondary' onClick={() => tabHandler(2)}>Important Banking Terms</button>
+                        <button className='tab-btn btn btn-secondary' onClick={() => tabHandler(3)}>Fees Structure</button>
+                    </Nav>
+                    {/* </Container> */}
+                </Navbar>
+
             </div>
-            
+
             {/* Broucher */}
-            {tab[0] && 
-            <div id='brochure'>
-                <div class="container">
-                    <div class="row">
-                    <div class="col">
-                        <div class="status-box-vertical status-box-vertical-primary card2">
-                        <div class="header">
-                            <h4 className='why_banking'>WHY BANKING ?</h4>
-                        </div>
-                        <div class="footer">
-                            <div class="box">
-                            <p class="top-title">Banks are institutions that are responsible for
-                            driving funds into the economy which further
-                            leads to the development of the country. Banking
-                            has been amongst the sought-after careers for
-                            ages, especially in India and still the mindset of
-                            the population has not changed. No matter the
-                            ongoing changes in the technology and the
-                            revolution taking place in the business industry,
-                            the only thing that has remained constant over
-                            centuries is having a career in the banking sector.
-                            Obviously one might not feel motivated to work in
-                            a sector if they are not aware about the present
-                            and future benefits.</p>
-                            {/* <p class="title">CHOOSE</p> */}
-                            <p class="icon"><i class="fa fa-money"></i></p>
+            {tab[0] &&
+                <div id='brochure'>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="status-box-vertical status-box-vertical-primary card2">
+                                    <div class="header">
+                                        <h4 className='why_banking'>WHY BANKING ?</h4>
+                                    </div>
+                                    <div class="footer">
+                                        <div class="box">
+                                            <p class="top-title">Banks play a key role in strengthening the economy by channeling funds into various sectors and supporting national growth. In India, banking has always been a preferred career choice, and its popularity continues even today. Despite rapid advancements in technology and major transformations in the business world, the banking sector remains a stable and trusted field for long-term careers.
+
+                                                Choosing a profession becomes easier when one understands its present value and future opportunities. The banking industry offers both, making it an attractive option for individuals seeking security, growth, and a meaningful career path.</p>
+                                            {/* <p class="title">CHOOSE</p> */}
+                                            <p class="icon"><i class="fa fa-money"></i></p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        </div>
-                    </div>  
-                    {/* <div class="col-xs-12 col-sm-6 col-md-3">
+                            {/* <div class="col-xs-12 col-sm-6 col-md-3">
                         <div class="status-box-vertical status-box-vertical-success card1">
                         <div class="header">
                             <p class="title">Lorem</p>
@@ -257,451 +247,422 @@ const Sscbanking = () => {
                         </div>
                         </div>
                     </div>       */}
-                    </div>
-                </div>
-
-                <div><h4 className='why_choose_points' style={{textAlign: 'center', textTransform: 'uppercase'}}>Why choose Banking as career?</h4></div> <br/>
-                    
-                <div class="card-category-1">
-                    
-                    <div class="basic-card basic-card-aqua">
-                        <div class="card-link">
-                            <a href="#" title="Read Full"><span>Good Social Standing</span></a>
                         </div>
                     </div>
 
-                    <div class="basic-card basic-card-lips">
-                        <div class="card-link">
-                            <a href="#" title="Read Full"><span>High Growth Sector</span></a>
+                    <div><h4 className='why_choose_points' style={{ textAlign: 'center', textTransform: 'uppercase' }}>Why choose Banking as career?</h4></div> <br />
+
+                    <div class="card-category-1">
+
+                        <div class="basic-card basic-card-aqua">
+                            <div class="card-link">
+                                <a href="#" title="Read Full"><span>Good Social Reputation</span></a>
+                            </div>
                         </div>
+
+                        <div class="basic-card basic-card-lips">
+                            <div class="card-link">
+                                <a href="#" title="Read Full"><span>High Career Growth Opportunities</span></a>
+                            </div>
+                        </div>
+
+                        <div class="basic-card basic-card-light">
+                            <div class="card-link">
+                                <a href="#" title="Read Full"><span>Attractive Salary Packages</span></a>
+                            </div>
+                        </div>
+
+                        <div class="basic-card basic-card-dark">
+                            <div class="card-link">
+                                <a href="#" title="Read Full"><span>Better Job Security Compared to Many Other Fields</span></a>
+                            </div>
+                        </div>
+
                     </div>
 
-                    <div class="basic-card basic-card-light">
-                        <div class="card-link">
-                            <a href="#" title="Read Full"><span>Competitive Compensation</span></a>
-                        </div>
-                    </div>
-
-                    <div class="basic-card basic-card-dark">
-                        <div class="card-link">
-                            <a href="#" title="Read Full"><span>Comparatively High job security</span></a>
-                        </div>
-                    </div>
-                    
-                </div>
-
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <div class="prepare_exam_heading"><h4>How To Prepare for Banking Exams</h4></div> <br/>
-                            <div class="footer" style={{display: "flex", justifyContent:"center", alignItems:"center"}} id='how-prepare-box'>
-                                <div className='how-prepare-icon'>
-                                    <img src='pic/preparation.png' width={'350'}/>
-                                </div>
-                                <div className='how-prepare-content'>A job in the banking sector is one of the most
-                                    sought-after jobs in the country. With banks
-                                    recruiting every year, thousands of candidates
-                                    apply in exams conducted by Institute of Banking
-                                    Personnel Selection (IBPS) and other banks.
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="prepare_exam_heading"><h4>How To Prepare for Banking Exams</h4></div> <br />
+                                <div class="footer" style={{ display: "flex", justifyContent: "center", alignItems: "center" }} id='how-prepare-box'>
+                                    <div className='how-prepare-icon'>
+                                        <img src='pic/preparation.png' width={'350'} />
+                                    </div>
+                                    <div className='how-prepare-content'>Banking jobs are among the most competitive in the country. Every year, thousands of candidates appear for exams conducted by IBPS and other major banks. Proper preparation is the key to success.</div>
                                 </div>
                             </div>
-                        </div>  
 
-                        <div>
-                            <ul className='prepare_ul'>
-                                <li className='prepare_li'>Plan properly</li>
-                                <div class="card-category-1">
-                                    <div class="basic-card-dub basic-card-light">
-                                        <div class="card-link">
-                                        The first thing that you need to do is
-                                        plan. Having a proper plan is
-                                        imperative as it ensures that no time
-                                        is wasted. When drawing up the plan,
-                                        you need to be aware of the exam
-                                        pattern, syllabus, previous year’s
-                                        cutoff etc. Knowing about these will
-                                        help you in preparing well for the
-                                        upcoming exams by focusing on
-                                        those aspects which needs work.
+                            <div>
+                                <ul className='prepare_ul'>
+                                    <li className='prepare_li'>Create a Clear Study Plan</li>
+                                    <div class="card-category-1">
+                                        <div class="basic-card-dub basic-card-light">
+                                            <div class="card-link">
+                                                Start with a well-structured plan. Understand the exam pattern, syllabus, and previous year cutoffs before you begin. This helps you identify areas that need more attention and distribute your effort wisely.
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <li className='prepare_li'>Make a timetable</li>
-                                <div class="card-category-1">
-                                    <div class="basic-card-dub basic-card-light">
-                                        <div class="card-link">
-                                        Next, you need to set a timetable.
-                                        Doing this will help you in managing
-                                        your time fruitfully and cover a
-                                        number of sections during the day. It
-                                        must be noted here that in the exam
-                                        you need to score cut-off marks in
-                                        each section to be eligible for the job.
+                                    <li className='prepare_li'>Set a Timetable</li>
+                                    <div class="card-category-1">
+                                        <div class="basic-card-dub basic-card-light">
+                                            <div class="card-link">
+                                                Schedule your daily study hours and divide time across all subjects. Since each section has an individual cutoff, balancing your preparation is essential.
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
 
-                                <li className='prepare_li'>Use online resources to learn</li>
-                                <div class="card-category-1">
-                                    <div class="basic-card-dub basic-card-light">
-                                        <div class="card-link">
-                                        You should use as much online
-                                        resources as possible. It will keep you
-                                        updated with the recent happenings
-                                        as well as enable you to master the
-                                        tricks and methods used in solving
-                                        the questions without wasting too
-                                        much time on any questions
+                                    <li className='prepare_li'>Use Online Learning Resources</li>
+                                    <div class="card-category-1">
+                                        <div class="basic-card-dub basic-card-light">
+                                            <div class="card-link">
+                                                Make use of online materials, current affairs updates, and concept videos. These resources help you learn shortcuts, improve speed, and stay updated with recent developments.
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
 
-                                <li className='prepare_li'>Go through the entire syllabus</li>
-                                <div class="card-category-1">
-                                    <div class="basic-card-dub basic-card-light">
-                                        <div class="card-link">
-                                        Cover the entire syllabus when preparing
-                                        for the exam. Doing this will ensure that you
-                                        can easily solve any question that comes in
-                                        the exam. As a variety of questions are
-                                        posed in an exam, being prepared is
-                                        imperative.
+                                    <li className='prepare_li'>Cover the Full Syllabus</li>
+                                    <div class="card-category-1">
+                                        <div class="basic-card-dub basic-card-light">
+                                            <div class="card-link">
+                                                Study every part of the syllabus thoroughly. Banking exams include a variety of questions, so complete coverage ensures you are prepared for any type of challenge.
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
 
-                                <li className='prepare_li'>Practice</li>
-                                <div class="card-category-1">
-                                    <div class="basic-card-dub basic-card-light">
-                                        <div class="card-link">
-                                        Another important thing is to practice as
-                                        much as possible. The more you practice
-                                        the better you will get at solving the
-                                        questions. You can try solving the questions
-                                        from mock tests by setting a specific time.
-                                        Doing this will ensure that you can keep a
-                                        track of time and answer as many questions
-                                        as possible during the exam.
+                                    <li className='prepare_li'>Practice Regularly</li>
+                                    <div class="card-category-1">
+                                        <div class="basic-card-dub basic-card-light">
+                                            <div class="card-link">
+                                                Practice is crucial. Solve mock tests and previous question papers within a fixed time. This improves your accuracy, speed, and time management.
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
 
-                                <li className='prepare_li'>Revise thoroughly</li>
-                                <div class="card-category-1">
-                                    <div class="basic-card-dub basic-card-light">
-                                        <div class="card-link">
-                                        Once you think that your preparation is
-                                        done, revise thoroughly. Do not take it easy
-                                        and keep working hard on each section. It
-                                        will ensure that there is no complacency.
+                                    <li className='prepare_li'>Revise Consistently</li>
+                                    <div class="card-category-1">
+                                        <div class="basic-card-dub basic-card-light">
+                                            <div class="card-link">
+                                                After completing the syllabus, revise all topics frequently. Continuous revision prevents mistakes and builds confidence before the exam.
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </ul>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
             }
 
             {/* Syllabus */}
-            {tab[1] && 
+            {tab[1] &&
 
                 subtab[0] ?
-                    <div id='syllabus' style={{display:'flex',justifyContent:'center',alignItems:'center', flexDirection:'column'}}>
-                        
-                        <Row>
-                            <Col md={12}>
+                <div id='syllabus' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
+
+                    <Row>
+                        <Col md={12}>
                             <h4 className='syllabus-heading'>SBI PO - SYLLABUS</h4>
-                                <ul className='underlist'>
-                                    <li className="card1" style={{color : "#D00903"}}>
-                                        <div className="icon"><i class="fa-solid fa-book-circle-arrow-right"></i></div>
-                                        <div className="title">Preliminary Exam</div>
-                                        <div className="content">
-                                            <ul className='list_content_syllabus'>
-                                                <li>Reasoning Ability</li>
-                                                <li>Quantitative Aptitude</li>
-                                                <li>English Language</li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li className="card1" style={{color : "#EC9E38"}}>
-                                        <div className="icon"><i class="fa-solid fa-book-circle-arrow-right"></i></div>
-                                        <div className="title">Mains Exam</div>
-                                        <div className="content">
-                                            <ul className='list_content_syllabus'>
-                                                <li>Reasoning Ability & Computer Knowledge</li>
-                                                <li>Quantitative Aptitude</li>
-                                                <li>English Language</li>
-                                                <li>General Awareness</li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li className="card1" style={{color : "#64BECF"}}>
-                                        <div className="icon"><i class="fa-solid fa-book-circle-arrow-up"></i></div>
-                                        <div className="title">Interview</div>
-                                        <div className="content">
-                                            <ul className='list_content_syllabus'>
-                                                <li>Banking and Current Affairs</li>
-                                                <li>Situational awareness</li>
-                                                <li>Temperament and mindset, cultural fit to the banking industry</li>
-                                                <li>Confidence and communication skills.</li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </Col>
+                            <ul className='underlist'>
+                                <li className="card1" style={{ color: "#D00903" }}>
+                                    <div className="icon"><i class="fa-solid fa-book-circle-arrow-right"></i></div>
+                                    <div className="title">Preliminary Exam</div>
+                                    <div className="content">
+                                        <ul className='list_content_syllabus'>
+                                            <li>Reasoning Ability</li>
+                                            <li>Quantitative Aptitude</li>
+                                            <li>English Language</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li className="card1" style={{ color: "#EC9E38" }}>
+                                    <div className="icon"><i class="fa-solid fa-book-circle-arrow-right"></i></div>
+                                    <div className="title">Mains Exam</div>
+                                    <div className="content">
+                                        <ul className='list_content_syllabus'>
+                                            <li>Reasoning Ability & Computer Knowledge</li>
+                                            <li>Quantitative Aptitude</li>
+                                            <li>English Language</li>
+                                            <li>General Awareness</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li className="card1" style={{ color: "#64BECF" }}>
+                                    <div className="icon"><i class="fa-solid fa-book-circle-arrow-up"></i></div>
+                                    <div className="title">Interview</div>
+                                    <div className="content">
+                                        <ul className='list_content_syllabus'>
+                                            <li>Banking and Current Affairs</li>
+                                            <li>Situational awareness</li>
+                                            <li>Temperament and mindset, cultural fit to the banking industry</li>
+                                            <li>Confidence and communication skills.</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </Col>
 
-                            <Col md={12}>
+                        <Col md={12}>
                             <h4 className='syllabus-heading'>IBPS PO - SYLLABUS</h4>
-                                <ul className='underlist'>
-                                    <li className="card1" style={{color : "#D00903"}}>
-                                        <div className="icon"><i class="fa-solid fa-book-circle-arrow-right"></i></div>
-                                        <div className="title">Preliminary Exam</div>
-                                        <div className="content">
-                                            <ul className='list_content_syllabus'>
-                                                <li>Reasoning Ability</li>
-                                                <li>Quantitative Aptitude</li>
-                                                <li>English Language</li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li className="card1" style={{color : "#EC9E38"}}>
-                                        <div className="icon"><i class="fa-solid fa-book-circle-arrow-right"></i></div>
-                                        <div className="title">Mains Exam</div>
-                                        <div className="content">
-                                            <ul className='list_content_syllabus'>
-                                                <li>Reasoning Ability & Computer Knowledge</li>
-                                                <li>Quantitative Aptitude</li>
-                                                <li>English Language</li>
-                                                <li>General Awareness</li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li className="card1" style={{color : "#64BECF"}}>
-                                        <div className="icon"><i class="fa-solid fa-book-circle-arrow-up"></i></div>
-                                        <div className="title">Interview</div>
-                                        <div className="content">
-                                            <ul className='list_content_syllabus'>
-                                                <li>Banking and Current Affairs</li>
-                                                <li>Situational awareness</li>
-                                                <li>Temperament and mindset, cultural fit to the banking industry</li>
-                                                <li>Confidence and communication skills.</li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </Col>
+                            <ul className='underlist'>
+                                <li className="card1" style={{ color: "#D00903" }}>
+                                    <div className="icon"><i class="fa-solid fa-book-circle-arrow-right"></i></div>
+                                    <div className="title">Preliminary Exam</div>
+                                    <div className="content">
+                                        <ul className='list_content_syllabus'>
+                                            <li>Reasoning Ability</li>
+                                            <li>Quantitative Aptitude</li>
+                                            <li>English Language</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li className="card1" style={{ color: "#EC9E38" }}>
+                                    <div className="icon"><i class="fa-solid fa-book-circle-arrow-right"></i></div>
+                                    <div className="title">Mains Exam</div>
+                                    <div className="content">
+                                        <ul className='list_content_syllabus'>
+                                            <li>Reasoning Ability & Computer Knowledge</li>
+                                            <li>Quantitative Aptitude</li>
+                                            <li>English Language</li>
+                                            <li>General Awareness</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li className="card1" style={{ color: "#64BECF" }}>
+                                    <div className="icon"><i class="fa-solid fa-book-circle-arrow-up"></i></div>
+                                    <div className="title">Interview</div>
+                                    <div className="content">
+                                        <ul className='list_content_syllabus'>
+                                            <li>Banking and Current Affairs</li>
+                                            <li>Situational awareness</li>
+                                            <li>Temperament and mindset, cultural fit to the banking industry</li>
+                                            <li>Confidence and communication skills.</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </Col>
 
-                            <Col md={12}>
+                        <Col md={12}>
                             <h4 className='syllabus-heading'>IBPS RRB PO - SYLLABUS</h4>
-                                <ul className='underlist'>
-                                    <li className="card1" style={{color : "#D00903"}}>
-                                        <div className="icon"><i class="fa-solid fa-book-circle-arrow-right"></i></div>
-                                        <div className="title">Preliminary Exam</div>
-                                        <div className="content">
-                                            <ul className='list_content_syllabus'>
-                                                <li>Reasoning Ability</li>
-                                                <li>Quantitative Aptitude</li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li className="card1" style={{color : "#EC9E38"}}>
-                                        <div className="icon"><i class="fa-solid fa-book-circle-arrow-right"></i></div>
-                                        <div className="title">Mains Exam</div>
-                                        <div className="content">
-                                            <ul className='list_content_syllabus'>
-                                                <li>Reasoning Ability & Computer Knowledge</li>
-                                                <li>Quantitative Aptitude</li>
-                                                <li>English / Hindi Language</li>
-                                                <li>Computer Knowledge</li>
-                                                <li>General Awareness</li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li className="card1" style={{color : "#64BECF"}}>
-                                        <div className="icon"><i class="fa-solid fa-book-circle-arrow-up"></i></div>
-                                        <div className="title">Interview</div>
-                                        <div className="content">
-                                            <ul className='list_content_syllabus'>
-                                                <li>Banking and Current Affairs</li>
-                                                <li>Situational awareness</li>
-                                                <li>Temperament and mindset, cultural fit to the banking industry</li>
-                                                <li>Confidence and communication skills.</li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </Col>
-                        </Row>
-                    </div>
-                    :
-                    subtab[1] && 
-                    <div id='syllabus' style={{display:'flex',justifyContent:'center',alignItems:'center', flexDirection:'column'}}>
-                        
-                        <Row>
-                            <Col md={12}>
+                            <ul className='underlist'>
+                                <li className="card1" style={{ color: "#D00903" }}>
+                                    <div className="icon"><i class="fa-solid fa-book-circle-arrow-right"></i></div>
+                                    <div className="title">Preliminary Exam</div>
+                                    <div className="content">
+                                        <ul className='list_content_syllabus'>
+                                            <li>Reasoning Ability</li>
+                                            <li>Quantitative Aptitude</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li className="card1" style={{ color: "#EC9E38" }}>
+                                    <div className="icon"><i class="fa-solid fa-book-circle-arrow-right"></i></div>
+                                    <div className="title">Mains Exam</div>
+                                    <div className="content">
+                                        <ul className='list_content_syllabus'>
+                                            <li>Reasoning Ability & Computer Knowledge</li>
+                                            <li>Quantitative Aptitude</li>
+                                            <li>English / Hindi Language</li>
+                                            <li>Computer Knowledge</li>
+                                            <li>General Awareness</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li className="card1" style={{ color: "#64BECF" }}>
+                                    <div className="icon"><i class="fa-solid fa-book-circle-arrow-up"></i></div>
+                                    <div className="title">Interview</div>
+                                    <div className="content">
+                                        <ul className='list_content_syllabus'>
+                                            <li>Banking and Current Affairs</li>
+                                            <li>Situational awareness</li>
+                                            <li>Temperament and mindset, cultural fit to the banking industry</li>
+                                            <li>Confidence and communication skills.</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </Col>
+                    </Row>
+                </div>
+                :
+                subtab[1] &&
+                <div id='syllabus' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
+
+                    <Row>
+                        <Col md={12}>
                             <h4 className='syllabus-heading'>SBI CLERK - SYLLABUS</h4>
-                                <ul className='underlist'>
-                                    <li className="card1" style={{color : "#D00903"}}>
-                                        <div className="icon"><i class="fa-solid fa-book-circle-arrow-right"></i></div>
-                                        <div className="title">Preliminary Exam</div>
-                                        <div className="content">
-                                            <ul className='list_content_syllabus'>
-                                                <li>Reasoning Ability</li>
-                                                <li>Quantitative Aptitude</li>
-                                                <li>English Language</li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li className="card1" style={{color : "#EC9E38"}}>
-                                        <div className="icon"><i class="fa-solid fa-book-circle-arrow-up"></i></div>
-                                        <div className="title">Mains Exam</div>
-                                        <div className="content">
-                                            <ul className='list_content_syllabus'>
-                                                <li>Reasoning Ability & Computer Knowledge</li>
-                                                <li>Quantitative Aptitude</li>
-                                                <li>English Language</li>
-                                                <li>General Awareness</li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </Col>
+                            <ul className='underlist'>
+                                <li className="card1" style={{ color: "#D00903" }}>
+                                    <div className="icon"><i class="fa-solid fa-book-circle-arrow-right"></i></div>
+                                    <div className="title">Preliminary Exam</div>
+                                    <div className="content">
+                                        <ul className='list_content_syllabus'>
+                                            <li>Reasoning Ability</li>
+                                            <li>Quantitative Aptitude</li>
+                                            <li>English Language</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li className="card1" style={{ color: "#EC9E38" }}>
+                                    <div className="icon"><i class="fa-solid fa-book-circle-arrow-up"></i></div>
+                                    <div className="title">Mains Exam</div>
+                                    <div className="content">
+                                        <ul className='list_content_syllabus'>
+                                            <li>Reasoning Ability & Computer Knowledge</li>
+                                            <li>Quantitative Aptitude</li>
+                                            <li>English Language</li>
+                                            <li>General Awareness</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </Col>
 
-                            <Col md={12}>
+                        <Col md={12}>
                             <h4 className='syllabus-heading'>IBPS CLERK - SYLLABUS</h4>
-                                <ul className='underlist'>
-                                    <li className="card1" style={{color : "#D00903"}}>
-                                        <div className="icon"><i class="fa-solid fa-book-circle-arrow-right"></i></div>
-                                        <div className="title">Preliminary Exam</div>
-                                        <div className="content">
-                                            <ul className='list_content_syllabus'>
-                                                <li>Reasoning Ability</li>
-                                                <li>Quantitative Aptitude</li>
-                                                <li>English Language</li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li className="card1" style={{color : "#EC9E38"}}>
-                                        <div className="icon"><i class="fa-solid fa-book-circle-arrow-right"></i></div>
-                                        <div className="title">Mains Exam</div>
-                                        <div className="content">
-                                            <ul className='list_content_syllabus'>
-                                                <li>Reasoning Ability & Computer Knowledge</li>
-                                                <li>Quantitative Aptitude</li>
-                                                <li>English Language</li>
-                                                <li>General Awareness</li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li className="card1" style={{color : "#64BECF"}}>
-                                        <div className="icon"><i class="fa-solid fa-book-circle-arrow-up"></i></div>
-                                        <div className="title">Interview</div>
-                                        <div className="content">
-                                            <ul className='list_content_syllabus'>
-                                                <li>Banking and Current Affairs</li>
-                                                <li>Situational awareness</li>
-                                                <li>Temperament and mindset, cultural fit to the banking industry</li>
-                                                <li>Confidence and communication skills.</li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </Col>
+                            <ul className='underlist'>
+                                <li className="card1" style={{ color: "#D00903" }}>
+                                    <div className="icon"><i class="fa-solid fa-book-circle-arrow-right"></i></div>
+                                    <div className="title">Preliminary Exam</div>
+                                    <div className="content">
+                                        <ul className='list_content_syllabus'>
+                                            <li>Reasoning Ability</li>
+                                            <li>Quantitative Aptitude</li>
+                                            <li>English Language</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li className="card1" style={{ color: "#EC9E38" }}>
+                                    <div className="icon"><i class="fa-solid fa-book-circle-arrow-right"></i></div>
+                                    <div className="title">Mains Exam</div>
+                                    <div className="content">
+                                        <ul className='list_content_syllabus'>
+                                            <li>Reasoning Ability & Computer Knowledge</li>
+                                            <li>Quantitative Aptitude</li>
+                                            <li>English Language</li>
+                                            <li>General Awareness</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li className="card1" style={{ color: "#64BECF" }}>
+                                    <div className="icon"><i class="fa-solid fa-book-circle-arrow-up"></i></div>
+                                    <div className="title">Interview</div>
+                                    <div className="content">
+                                        <ul className='list_content_syllabus'>
+                                            <li>Banking and Current Affairs</li>
+                                            <li>Situational awareness</li>
+                                            <li>Temperament and mindset, cultural fit to the banking industry</li>
+                                            <li>Confidence and communication skills.</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </Col>
 
-                            <Col md={12}>
+                        <Col md={12}>
                             <h4 className='syllabus-heading'>IBPS RRB CLERK - SYLLABUS</h4>
-                                <ul className='underlist'>
-                                    <li className="card1" style={{color : "#D00903"}}>
-                                        <div className="icon"><i class="fa-solid fa-book-circle-arrow-right"></i></div>
-                                        <div className="title">Preliminary Exam</div>
-                                        <div className="content">
-                                            <ul className='list_content_syllabus'>
-                                                <li>Reasoning Ability</li>
-                                                <li>Quantitative Aptitude</li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li className="card1" style={{color : "#EC9E38"}}>
-                                        <div className="icon"><i class="fa-solid fa-book-circle-arrow-right"></i></div>
-                                        <div className="title">Mains Exam</div>
-                                        <div className="content">
-                                            <ul className='list_content_syllabus'>
-                                                <li>Reasoning Ability & Computer Knowledge</li>
-                                                <li>Quantitative Aptitude</li>
-                                                <li>Financial Awareness</li>
-                                                <li>English / Hindi Language</li>
-                                                <li>Computer Knowledge</li>
-                                                <li>General Awareness</li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </Col>
-                        </Row>
-                    </div>
-            
+                            <ul className='underlist'>
+                                <li className="card1" style={{ color: "#D00903" }}>
+                                    <div className="icon"><i class="fa-solid fa-book-circle-arrow-right"></i></div>
+                                    <div className="title">Preliminary Exam</div>
+                                    <div className="content">
+                                        <ul className='list_content_syllabus'>
+                                            <li>Reasoning Ability</li>
+                                            <li>Quantitative Aptitude</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li className="card1" style={{ color: "#EC9E38" }}>
+                                    <div className="icon"><i class="fa-solid fa-book-circle-arrow-right"></i></div>
+                                    <div className="title">Mains Exam</div>
+                                    <div className="content">
+                                        <ul className='list_content_syllabus'>
+                                            <li>Reasoning Ability & Computer Knowledge</li>
+                                            <li>Quantitative Aptitude</li>
+                                            <li>Financial Awareness</li>
+                                            <li>English / Hindi Language</li>
+                                            <li>Computer Knowledge</li>
+                                            <li>General Awareness</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </Col>
+                    </Row>
+                </div>
+
             }
 
             {/* Important Banking Terms */}
-            {tab[2] && 
-            <div id='importantbankingterms'>
+            {tab[2] &&
+                <div id='importantbankingterms'>
 
-            <Row style={{display:'flex', justifyContent: 'center', alignItems: 'center', flexDirection:'column'}}>
-                <Col md={10} className='importantterms_desc'>
-                    <div>
-                    Banking terms and concepts are many and can
-                        sometimes be difficult to figure out, even for the
-                        industry professionals. However, since banking is a
-                        significant part of our business and personal life, it is
-                        useful for consumers to learn some common banking
-                        terms.
-                    </div>
-                </Col>
-                <Col md={10}>
-                    <Accordion defaultActiveKey="0" flush alwaysOpen>
-                    {Array.from({ length: importLength }).map((_, idx) => (
-                        <Accordion.Item eventKey={idx}>
-                            <Accordion.Header><h5 className='bank_import_heading' style={{textTransform:'capitalize'}}>{bankingimportant_heading[idx]}</h5></Accordion.Header>
-                            <Accordion.Body className='bank_import_content' >
-                            {bankingimportant_content[idx]}
-                            </Accordion.Body>
-                        </Accordion.Item>
-                    ))}
-                    </Accordion> 
-                </Col>
-            </Row>
-                {/* <Important/> */}
-            </div>
+                    <Row style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
+                        <Col md={10} className='importantterms_desc'>
+                            <div>
+                                Banking terms and concepts are many and can
+                                sometimes be difficult to figure out, even for the
+                                industry professionals. However, since banking is a
+                                significant part of our business and personal life, it is
+                                useful for consumers to learn some common banking
+                                terms.
+                            </div>
+                        </Col>
+                        <Col md={10}>
+                            <Accordion defaultActiveKey="0" flush alwaysOpen>
+                                {Array.from({ length: importLength }).map((_, idx) => (
+                                    <Accordion.Item eventKey={idx}>
+                                        <Accordion.Header><h5 className='bank_import_heading' style={{ textTransform: 'capitalize' }}>{bankingimportant_heading[idx]}</h5></Accordion.Header>
+                                        <Accordion.Body className='bank_import_content' >
+                                            {bankingimportant_content[idx]}
+                                        </Accordion.Body>
+                                    </Accordion.Item>
+                                ))}
+                            </Accordion>
+                        </Col>
+                    </Row>
+                    {/* <Important/> */}
+                </div>
             }
 
             {/* Fees Structure */}
-            {tab[3] && 
-            <div id='fees_structure'>
-                <Row style={{display:'flex', justifyContent: 'center', alignItems: 'center', flexDirection:'column'}}>
-                    <Col md={10}>
-                        <Table striped bordered hover>
-                            <thead>
-                                <tr>
-                                    <th colSpan="2" className='u_heading'>FEES STRUCTURE</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Course Fees</td>
-                                    <td>Rs. 15,000</td>
-                                </tr>
-                            </tbody>
-                        </Table>
-                    </Col>
-                </Row>
-            </div>
+            {tab[3] &&
+                <div id='fees_structure'>
+                    <Row style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
+                        <Col md={10}>
+                            <Table striped bordered hover>
+                                <thead>
+                                    <tr>
+                                        <th colSpan="2" className='u_heading'>FEES STRUCTURE</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Course Fees</td>
+                                        <td>Rs. 20,000 /-</td>
+                                    </tr>
+                                </tbody>
+                            </Table>
+                        </Col>
+                    </Row>
+                </div>
             }
-             <section style={{display:'flex', justifyContent:'center', alignItems:'center', margin:'5vh'}}>
-                <Button style={{background:'#aa2c44', border:'1px solid #aa2c44', borderRadius:'2px'}} className='joinbutton'><a style={{color:'white', textDecoration:'none'}} href='tel:9445887823'>Enroll Now</a></Button>
+            <section style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', margin: '5vh' }}>
+                <Button style={{ background: '#aa2c44', border: '1px solid #aa2c44', borderRadius: '2px' }} className='joinbutton'><a style={{ color: 'white', textDecoration: 'none' }} href='tel:9445887823'>Enroll Now</a></Button>
             </section>
-            <Footer/>
+
+            {/* Exam Notes */}
+            <div style={{ padding: '20px', maxWidth: 1000, margin: '0 auto' }}>
+                <h4 className='u_heading'>Exam Notes</h4>
+                <ul>
+                    <li>SBI PO MAINS – DESCRIPTIVE WRITING</li>
+                    <li>INTERVIEW SECTION – (ADD) GROUP DISCUSSION, GROUP EXERCISE, INTERVIEW</li>
+                    <li>IBPS PO MAINS – DESCRIPTIVE WRITING</li>
+                    <li>IBPS CLERK – NO INTERVIEW</li>
+                    <li>IBPS RRB CLERK - Financial Awareness (NO)</li>
+                </ul>
+            </div>
+            <Footer />
         </section>
     )
 }

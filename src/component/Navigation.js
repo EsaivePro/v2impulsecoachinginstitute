@@ -11,23 +11,23 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import {BiSolidPhoneCall} from 'react-icons/bi'
+import { BiSolidPhoneCall } from 'react-icons/bi'
 import { Bounce } from 'react-awesome-reveal';
 import { NavLink } from 'react-router-dom';
-import {FiPhoneCall} from 'react-icons/fi';
+import { FiPhoneCall } from 'react-icons/fi';
 
 const pages = ['Home', 'Explore Course', 'Testseries', 'Learn'];
-const settings = ['Tnpsc', 'Upsc', 'Ssc and banking', 'Others'];
+const settings = ['Tnpsc', 'Upsc', 'Banking / SSC', 'Others'];
 const phone = ['9003557734', '9445887823', '9445887823', '9003557734'];
-const anchor = ['home', 'explorecourse', 'testseries', 'user' ];
+const anchor = ['home', 'explorecourse', 'testseries', 'user'];
 
 function Navigation(props) {
 
-    
+
   //navbar scroll when active state
   const [navbar, setNavbar] = useState(false);
   let scrollvalue = 0;
-  if(props.scroll==true){
+  if (props.scroll == true) {
     scrollvalue = 200;
   }
   const changeBackground = () => {
@@ -83,7 +83,7 @@ function Navigation(props) {
               textDecoration: 'none',
             }}
           >
-            <img src='/logo.png' width={140} alt='logo'/>
+            <img src='/logo.png' width={140} alt='logo' />
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -94,7 +94,7 @@ function Navigation(props) {
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
             >
-              <MenuIcon id ={navbar ? 'menuicon' : 'menuicon2'}/>
+              <MenuIcon id={navbar ? 'menuicon' : 'menuicon2'} />
             </IconButton>
             <Menu
               id="menu-appbar"
@@ -116,8 +116,8 @@ function Navigation(props) {
             >
               {pages.map((page, idx) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">               <NavLink to={"/"+anchor[idx]} style={{textDecoration: 'none', color:'inherit' }}  >{page}</NavLink>
-</Typography>
+                  <Typography textAlign="center">               <NavLink to={"/" + anchor[idx]} style={{ textDecoration: 'none', color: 'inherit' }}  >{page}</NavLink>
+                  </Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -138,18 +138,18 @@ function Navigation(props) {
               textDecoration: 'none',
             }}
           >
-            <img src='/logo.png' width={140} alt='logo'/>
+            <img src='/logo.png' width={140} alt='logo' />
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex', display:'flex', justifyContent:'center', alignItems:'center' } }}>
-            {pages.map((page,idx) => (
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex', display: 'flex', justifyContent: 'center', alignItems: 'center' } }}>
+            {pages.map((page, idx) => (
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
                 id={navbar ? 'navbarlink' : 'navbarlink2'}
               >
-               <NavLink to={"/"+anchor[idx]} style={{textDecoration: 'none', color:'inherit' }}  >{page}</NavLink>
-                
+                <NavLink to={"/" + anchor[idx]} style={{ textDecoration: 'none', color: 'inherit' }}  >{page}</NavLink>
+
               </Button>
             ))}
           </Box>
@@ -157,7 +157,7 @@ function Navigation(props) {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Enquiry Call">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-              <Typography textAlign="center" className={navbar ? 'enquirycall' : 'enquirycall2'} style={{display:'flex'}}>ENQUIRY <span className='bounce'><Bounce duration="500" ><BiSolidPhoneCall style={{marginLeft:'2px'}}/></Bounce></span></Typography>
+                <Typography textAlign="center" className={navbar ? 'enquirycall' : 'enquirycall2'} style={{ display: 'flex' }}>ENQUIRY <span className='bounce'><Bounce duration="500" ><BiSolidPhoneCall style={{ marginLeft: '2px' }} /></Bounce></span></Typography>
 
               </IconButton>
             </Tooltip>
@@ -180,7 +180,7 @@ function Navigation(props) {
               {settings.map((setting, idx) => (
                 <MenuItem key={setting} onClick={handleCloseUserMenu}>
                   <Typography textAlign="center">
-                  <a style={{textDecoration:'none', color:'inherit'}} href={'tel:'+phone[idx]}> <FiPhoneCall/> {setting}</a></Typography>
+                    <a style={{ textDecoration: 'none', color: 'inherit' }} href={'tel:' + phone[idx]}> <FiPhoneCall /> {setting}</a></Typography>
                 </MenuItem>
               ))}
             </Menu>
