@@ -116,7 +116,16 @@ function Navigation(props) {
             >
               {pages.map((page, idx) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">               <NavLink to={"/" + anchor[idx]} style={{ textDecoration: 'none', color: 'inherit' }}  >{page}</NavLink>
+                  <Typography textAlign="center">
+                    {page === 'Learn' ? (
+                      <a href="https://impulsecoachinginstitute-lms.netlify.app/" target="_blank" style={{ textDecoration: 'none', color: 'inherit' }}>
+                        {page}
+                      </a>
+                    ) : (
+                      <NavLink to={'/' + anchor[idx]} style={{ textDecoration: 'none', color: 'inherit' }}>
+                        {page}
+                      </NavLink>
+                    )}
                   </Typography>
                 </MenuItem>
               ))}
@@ -148,7 +157,15 @@ function Navigation(props) {
                 sx={{ my: 2, color: 'white', display: 'block' }}
                 id={navbar ? 'navbarlink' : 'navbarlink2'}
               >
-                <NavLink to={"/" + anchor[idx]} style={{ textDecoration: 'none', color: 'inherit' }}  >{page}</NavLink>
+                {page === 'Learn' ? (
+                  <a href="https://impulsecoachinginstitute-lms.netlify.app/" style={{ textDecoration: 'none', color: 'inherit' }}>
+                    {page}
+                  </a>
+                ) : (
+                  <NavLink to={'/' + anchor[idx]} style={{ textDecoration: 'none', color: 'inherit' }}>
+                    {page}
+                  </NavLink>
+                )}
 
               </Button>
             ))}

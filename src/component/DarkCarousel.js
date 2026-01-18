@@ -60,7 +60,12 @@ function DarkCarousel() {
                 >
                   <Slide direction="up">
                     <Button className="enrollnow_front" style={{ background: '#aa2c44', color: 'white' }}>
-                      <a style={{ textDecoration: 'none', color: 'inherit' }} href={item.buttonLink}>
+                      <a
+                        style={{ textDecoration: 'none', color: 'inherit' }}
+                        href="https://impulsecoachinginstitute-lms.netlify.app/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         {item.buttonText}
                       </a>
                     </Button>
