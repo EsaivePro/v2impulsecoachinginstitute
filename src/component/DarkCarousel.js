@@ -62,8 +62,8 @@ function DarkCarousel() {
                     <Button className="enrollnow_front" style={{ background: '#aa2c44', color: 'white' }}>
                       <a
                         style={{ textDecoration: 'none', color: 'inherit' }}
-                        href="https://impulsecoachinginstitute-lms.netlify.app/"
-                        target="_blank"
+                        href="https://impulsecoachinginstitute-lms.netlify.app/user/register"
+                        // target="_blank"
                         rel="noreferrer"
                       >
                         {item.buttonText}

@@ -118,7 +118,7 @@ function Navigation(props) {
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">
                     {page === 'Learn' ? (
-                      <a href="https://impulsecoachinginstitute-lms.netlify.app/" target="_blank" style={{ textDecoration: 'none', color: 'inherit' }}>
+                      <a href="https://impulsecoachinginstitute-lms.netlify.app/" style={{ textDecoration: 'none', color: 'inherit' }}>
                         {page}
                       </a>
                     ) : (

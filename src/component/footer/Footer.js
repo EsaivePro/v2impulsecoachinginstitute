@@ -28,7 +28,7 @@ function Footer() {
           <NavLink to="/sscandbanking">Banking / SSC</NavLink>
         </div>
         <div className="footer-cta">
-          <a href="https://impulsecoachinginstitute-lms.netlify.app/" style={{ padding: '8px', textDecoration: 'none', color: 'white', background: '#aa2c44', borderRadius: '0px', border: '3px solid #aa2c44' }}>Enroll Now</a>
+          <a href="https://impulsecoachinginstitute-lms.netlify.app/user/register" style={{ padding: '8px', textDecoration: 'none', color: 'white', background: '#aa2c44', borderRadius: '0px', border: '3px solid #aa2c44' }}>Enroll Now</a>
 
         </div>
         <div className="footer-copyright">
