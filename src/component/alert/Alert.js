@@ -23,7 +23,7 @@ function Alert() {
                 </Modal.Header>
                 <Modal.Body>
                     <Card className="bg-dark text-white">
-                        <Card.Img src="/v2/alert/popup3.jpg" alt="Card image" />
+                        <Card.Img src="/v2/alert/newbatch.png" alt="Card image" />
                         <Card.ImgOverlay>
 
                             {/* <Card.Title>Card title</Card.Title>
@@ -53,7 +53,7 @@ function Alert() {
                     {/*<a href="tel:9003557734" target='_blank'><Button variant="danger">
                         <FiPhoneCall /> Call
                     </Button></a> */}
-                        <a href="https://forms.gle/xnUBNybds1MLVkPX9" target='_blank'><Button variant="danger">
+                    <a href="https://forms.gle/xnUBNybds1MLVkPX9" target='_blank'><Button variant="danger">
                         Click
                     </Button></a>
                     <Button variant="secondary" onClick={handleClose}>
